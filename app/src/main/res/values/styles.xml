@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Apptheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>>
+
+    <style name="DialogStyle" parent="Theme.MaterialComponents.Dialog.Alert" >
+        <item name="android:windowMinWidthMinor">95%</item>
+        <item name="android:windowMinWidthMajor">95%</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox" />
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhotoApp</string>
+    <string name="set_as_wallpaper">Set as Wallpaper</string>
+    <string name="save">Save to Downloads</string>
+    <string name="your_discription">Your Discription</string>
+    <string name="image">image</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="set_a_description">Set a Description</string>
+    <string name="update">Update</string>
+    <string name="search">Search</string>
+    <string name="show_discriptions">Show Discriptions</string>
+</resources>

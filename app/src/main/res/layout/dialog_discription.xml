@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_16sdp"
+    android:background="@android:color/white"
+    android:backgroundTint="@android:color/white"
+    android:layout_centerInParent="true"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_ed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@id/btn_cancel">
+
+        <EditText
+            android:id="@+id/ed_discription"
+            android:backgroundTint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:hint="@string/your_discription"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp"
+            android:maxLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/_24sdp"
+            tools:ignore="RtlSymmetry" />
+
+        </com.google.android.material.card.MaterialCardView>
+        <!--<com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFirstName"
+            style="@style/CreateAccountTextInputLayoutStyle"
+            app:boxBackgroundColor="@color/white_4c"
+            app:boxBackgroundMode="outline"
+            app:boxCollapsedPaddingTop="0dp"
+            app:boxCornerRadiusBottomEnd="@dimen/_24sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_24sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_24sdp"
+            app:boxCornerRadiusTopStart="@dimen/_24sdp"
+            app:endIconTint="@color/light_green_00feca"
+            app:errorTextColor="@color/light_green_00feca"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFirstName"
+            app:layout_goneMarginTop="@dimen/_18sdp">
+
+           <com.google.android.material.textfield.TextInputEditText
+                style="@style/CreateAccountEditTextStyle"
+                android:hint="@string/first_name"
+                android:inputType="text"
+                android:text="@={viewModel.firstName}"
+                android:textColorHint="@color/blue_b6d3ff" />
+
+        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:theme="@style/Apptheme"
+            android:visibility="visible"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_submit"
+            app:layout_constraintStart_toStartOf="@id/cv_ed"
+            app:layout_constraintTop_toBottomOf="@id/cv_ed" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/submit"
+            android:textColor="#ffffff"
+            android:theme="@style/Apptheme"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_cancel"
+            app:layout_constraintStart_toEndOf="@id/btn_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_cancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
